@@ -1,0 +1,624 @@
+$base-color: #0065A4;
+$active-color: #00AEEF;
+$tab-color: #565656;
+
+/* Brand Colors */
+$brand-vac-therapy: #00AEEF; /* R:0 G:174 B:239 */
+$brand-abthera: #7AC143; /* R:122 G:193 B:67 */
+$brand-prevena: #7473A9; /* R:116 G:115 B:169 */
+$brand-vac-via: #C60651; /* R:198 G:6 B:81 */
+$brand-vac-ulta: #0055A5; /* R:0 G:85 B:165 */
+$brand-graftjacket: #942687; /* R:148 G:38 B:135 */
+$brand-default: #0065A4;
+
+/* Carousel Indicators */
+$base-indicator: #EEE;
+$active-indicator: #00AEEF;
+
+/* Font Sizes */
+$font-size: .8em;
+$msg-font-size: 1.0em;
+$groupdataview-h1: 1.5em;
+$groupdataview-h2: 1.0em;
+$content-h1: 1.1em;
+$content-h2: 1.0em;
+$carousel-h1: 1.1em;
+$font-size: .9em;
+
+// DataView
+$dataview-item-active-color: #7abcff;
+$group-dataview-item-color: #A1A1A1;
+$group-dataview-border-color: #464646;
+$group-dataview-item-active-color: #C7C7C7;
+
+$base-gradient: 'matte';
+
+$tabs-dark: darken($tab-color, 20%);
+$tabs-dark-active-color: saturate($active-color, 100%);
+$tabs-bottom-active-gradient: 'matte';
+
+@import 'sencha-touch/default/all';
+
+// You may remove any of the following modules that you
+// do not use in order to create a smaller css file.
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+//@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+//@include sencha-indexbar;
+@include sencha-list;
+@include sencha-layout;
+@include sencha-carousel;
+//@include sencha-form;
+@include sencha-msgbox;
+@include sencha-loading-spinner;
+
+// Your custom code goes here...
+
+/* Icons */
+@include pictos-iconmask('list');
+@include pictos-iconmask('team');
+@include pictos-iconmask('compass2');
+@include pictos-iconmask('mail');
+
+
+.x-button.kci-logo-btn {
+	@include background-gradient(#CCC, 'matte');
+	-webkit-border-radius: 0.50em!important;
+	border-radius: 0.50em!important;
+	border: 1px solid #000;
+}
+.x-button.kci-logo-btn.x-button-pressing {
+	@include background-gradient($active-color, 'matte');
+}
+.logo {
+	background: url('../images/kci-home.png') center center no-repeat;
+	width: 68px!important;
+	height: 18px!important;
+}
+
+/* Overrides*/
+.x-html {
+	font-size: $font-size;
+}
+.x-carousel-indicator span {
+	width: .7em;
+	height: .7em;
+	-webkit-border-radius: 0.25em;
+	border-radius: 0.25em;
+	background-color: $base-indicator;
+	border: 1px solid #666;
+	-webkit-box-shadow: 1px 1px 5px #888;
+	box-shadow: 1px 1px 5px #888;
+}
+.x-carousel-indicator-dark span.x-carousel-indicator-active {
+	background-color: $active-indicator;
+}
+.x-msgbox {
+	max-width: 35em;
+}
+.x-title {
+	font-weight: normal;
+}
+.x-title .x-innerhtml {
+	text-overflow: none!important;
+}
+/*
+.x-toolbar .x-button-icon.logo {
+	width: 68px;
+	height: 18px;
+}*/
+
+/* Default DataView */
+.nav-dataview {
+	border-right: 1px solid #000;
+}
+.nav-dataview-item {
+    background: #fff;
+    padding: 1.3em .8em 1.3em .8em;
+    border-bottom: 1px solid #CCC;
+	position: relative;
+}
+.nav-dataview-left {
+	padding-right: 15px;
+}
+.nav-dataview-img {
+    float: left;
+    margin: 0 .5em 0 0;
+}
+.nav-dataview-title {
+	
+}
+.nav-dataview-item span {
+	color: #666;
+	font-size: .8em;
+}
+.nav-dataview-disclosure {
+	width: 11px;
+	height: 16px;
+	position: absolute;
+	right: 15px;
+	top: 40%;
+	background: url('../images/disclosure.png') no-repeat;
+}
+.nav-dataview-item.x-item-pressed, .nav-dataview-item.x-item-selected{
+	@include background-gradient($base-color, 'matte');
+}
+.nav-dataview-item.x-item-pressed h1, .nav-dataview-item.x-item-selected h1, .nav-dataview-item.x-item-pressed p, .nav-dataview-item.x-item-selected p {
+	color:#FFF;
+}
+.x-toolbar {
+	border-right: 1px solid #000;
+}
+
+/* Group DataView */
+.nav-groupdataview {
+	/*background: #666 url('../images/background.png') repeat;*/
+	background: url('../images/backgroundStripe.png') repeat;
+}
+.nav-groupdataview-item {
+	/*@include background-gradient($group-dataview-item-color, 'matte');*/
+	height: 130px;
+}
+.nav-groupdataview-item.x-item-pressed{
+	/*@include background-gradient($group-dataview-item-active-color, 'matte');*/
+}
+.nav-groupdataview .nav-group-left {
+	width: 28%; /*width: 28%;*/
+	float: left;
+	padding: 20px 20px 10px 15px;
+	height: 130px;
+}
+.nav-groupdataview .nav-group-left h2 {
+	font-size: $groupdataview-h2;
+	text-align: right;
+	line-height: 21pt;
+	margin-top: 12px;
+	color:#FFF;
+	font-weight:bold;
+	@include bevel-text('shadow');
+	
+}
+.nav-groupdataview .nav-group-right {
+	float: right;
+	width:72%; /*width: 72%;*/
+	padding: 10px 10px 10px 40px;
+	border-left: 2px solid #EEE;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	height: 130px;
+}
+.nav-groupdataview .nav-group-right h1 {
+	padding: 35px 0 30px 0px;
+	font-size: $groupdataview-h1;
+	color: #FFF;
+	//@include bevel-text('shadow');
+	text-shadow: rgba(0, 0, 0, 0.3) 0 -0.08em 0;
+}
+.nav-groupdataview .nav-group-right img {
+	float: right;
+	margin-top: 5px;
+	border-radius: 15px; 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px;
+}
+
+.nav-groupdataview .nav-group {
+	float: left;
+	width:100%; /*width: 72%;*/
+	padding: 10px 10px 10px 40px;
+	border-left: 2px solid #EEE;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	height: 130px;
+}
+.nav-groupdataview .nav-group h1 {
+	padding: 35px 0 30px 0px;
+	font-size: $groupdataview-h1;
+	color: #FFF;
+	//@include bevel-text('shadow');
+	text-shadow: rgba(0, 0, 0, 0.3) 0 -0.08em 0;
+}
+.nav-groupdataview .nav-group img {
+	float: right;
+	margin-top: 5px;
+	border-radius: 15px; 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px;
+}
+
+.nav-conditions-list-item {
+	border-radius: 15px; 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	/*border: 1px solid #8c8c8c;*/
+	margin: .5em;
+}
+
+.nav-conditions-list-item {
+	@include background-gradient($group-dataview-item-color, 'matte');
+}
+.nav-conditions-list-item .nav-group {
+	border: none;
+}
+
+.nav-product-list-item {
+	border-radius: 15px; 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px;
+	margin: .5em; 
+	/*border: 1px solid #8c8c8c;*/
+}
+.nav-product-list-item {
+	@include background-gradient($group-dataview-item-color, 'matte');
+}
+.x-item-pressed .nav-list-item{
+	/*@include background-gradient($group-dataview-item-active-color, 'matte');*/
+}
+
+
+/* Grouped DataView */
+.nav-groupeddataview {
+	background-color: #666;
+}
+.nav-groupeddataview-item {
+	border-radius: 15px; 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	border: 1px solid #8c8c8c;
+	margin: .3em;
+}
+.nav-groupeddataview-item {
+	background: #d3d3d3;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d3d3d3), color-stop(100%,#8c8c8c));
+	background: -webkit-linear-gradient(top, #d3d3d3 0%,#8c8c8c 100%);
+	background: linear-gradient(top, #d3d3d3 0%,#8c8c8c 100%);
+}
+.nav-groupeddataview-item p {
+	color: #444;
+	font-size: $font-size;
+}
+.nav-groupeddataview .nav-group-left {
+	float: left;
+	padding: 10px 10px 5px 10px;
+}
+.nav-groupeddataview .nav-group-right {
+	float: left;
+	padding: 10px 10px 10px 5px;
+}
+.nav-groupeddataview .nav-group-right h2 {
+	
+}
+
+/* Product Template */
+.featured {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.featured img {
+	border: 1px solid #333;
+	border-radius: 15px; 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px;
+}
+.featured.hotspot img{
+	border: none;
+}
+.reimbursement {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.reimbursement img {
+	margin-right: 10px;
+}
+.reimbursement img:last-child {
+	margin-right: 0px;
+}
+.content h1 {
+	font-size: $content-h1;
+	font-weight: bold;
+}
+.content h2 {
+	font-size: $content-h2;
+	font-weight: bold;
+}
+.content a {
+	background: #00AEEF;
+	color: #FFF;
+	padding: 3px;
+	text-decoration:none;
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+}
+.content a:hover {
+	color: #000;
+}
+.content p {
+	font-size: $font-size;
+}
+
+/* Video */
+.detail-video {
+	margin: 0 auto;
+	background-color: #000;
+	height: auto;
+	width: 100%;
+}
+
+/* NavigationViewContainer */
+.x-navigationview-inner {
+	/*background: #666 url('../images/background.png') repeat;*/
+	background: #0065a4; /* Old browsers */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0065a4), color-stop(50%,#60abf8), color-stop(100%,#0065a4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #0065a4 0%,#60abf8 50%,#0065a4 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top,  #0065a4 0%,#60abf8 50%,#0065a4 100%); /* W3C */	
+}
+.container-bg {
+	width: 512px;
+	height:512px;
+	margin: 0 auto;
+	margin-top: 40px;
+	background: url('../images/splash.png') center center no-repeat;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+}
+
+/* HotSpots */
+.hotspot-detail {
+	
+}
+.hotspot-detail-img {
+	float: left;
+	margin-right: 20px;
+}
+
+/* Carousel */
+.x-carousel {
+	/*background: #666 url('../images/background.png') repeat;*/
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(69,72,77,1)), color-stop(14%,rgba(107,111,119,1)), color-stop(86%,rgba(107,111,119,1)), color-stop(99%,rgba(69,72,77,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(69,72,77,1) 0%,rgba(107,111,119,1) 14%,rgba(107,111,119,1) 86%,rgba(69,72,77,1) 99%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(left,  rgba(69,72,77,1) 0%,rgba(107,111,119,1) 14%,rgba(107,111,119,1) 86%,rgba(69,72,77,1) 99%); /* W3C */
+	
+}
+.x-carousel .carousel-item {
+	border-radius: 15px; 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px; 
+	background: #EEE;
+}
+.x-carousel .carousel-item h1 {
+	font-size: $carousel-h1;
+	font-weight: bold;
+	padding: 10px 0 10px 0;
+}
+.x-carousel .carousel-item .content {
+	padding:10px 20px 10px 20px;
+}
+.x-carousel .carousel-more {
+	height: 20px;
+	border-top: 2px solid #999;
+}
+.x-carousel .carousel-more span {
+	font-weight: bold;
+	font-size: $font-size;
+	font-color: #999;
+	padding: 5px 20px 5px 20px;
+	
+}
+.x-carousel .carousel-more span.right {
+	float: right;
+}
+.x-carousel .carousel-more span.left {
+	float: left;
+}
+.x-carousel .carousel-more span.center{
+	position: absolute;
+	left: 40%;
+}
+.x-carousel .carousel-item img {
+	border-radius: 15px; 
+	-moz-border-radius: 15px; 
+	-webkit-border-radius: 15px;
+}
+
+/* Brand Colors */
+.brand-vac-therapy h1, h2, h3{
+	color: $brand-vac-therapy;
+}
+.brand-vac-therapy .carousel-item h1 {
+	color: #FFF;
+	background-color: $brand-abthera;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.nav-groupdataview .brand-vac-therapy-bg .nav-group-right{
+	@include background-gradient($brand-vac-therapy, 'matte');
+}
+
+.brand-abthera h1, h2, h3{
+	color: $brand-abthera;
+}
+.brand-abthera .carousel-item h1 {
+	color: #FFF;
+	background-color: $brand-abthera;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.nav-groupdataview .brand-abthera-bg .nav-group-right{
+	@include background-gradient($brand-abthera, 'matte');
+}
+
+.brand-prevena h1, h2, h3{
+	color: $brand-prevena;
+}
+.brand-prevena .carousel-item h1 {
+	color: #FFF;
+	background-color: $brand-prevena;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.nav-groupdataview .brand-prevena-bg .nav-group-right{
+	@include background-gradient($brand-prevena, 'matte');
+}
+
+.brand-vac-via h1, h2, h3{
+	color: $brand-vac-via;
+}
+.brand-vac-via .carousel-item h1 {
+	color: #FFF;
+	background-color: $brand-vac-via;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.nav-groupdataview .brand-vac-via-bg .nav-group-right{
+	@include background-gradient($brand-vac-via, 'matte');
+}
+ 
+.brand-vac-ulta h1, h2, h3{
+	color: $brand-vac-ulta;
+}
+.brand-vac-ulta .carousel-item h1 {
+	color: #FFF;
+	background-color: $brand-vac-ulta;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.nav-groupdataview .brand-vac-ulta-bg .nav-group-right{
+	@include background-gradient($brand-vac-ulta, 'matte');
+}
+
+.brand-graftjacket h1, h2, h3{
+	color: $brand-graftjacket;
+}
+.brand-graftjacket .carousel-item h1 {
+	color: #FFF;
+	background-color: $brand-graftjacket;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.nav-groupdataview .brand-graftjacket-bg .nav-group-right{
+	@include background-gradient($brand-graftjacket, 'matte');
+}
+
+.brand-default h1, h2, h3{
+	color: $brand-default;
+}
+.brand-default .carousel-item h1 {
+	color: #FFF;
+	background-color: $brand-default;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.nav-groupdataview .brand-default-bg .nav-group-right{
+	@include background-gradient($brand-default, 'matte');
+}
+
+/* Buttons */
+.button-container {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 1em;
+	border-radius: .75em; 
+	-moz-border-radius: .75em; 
+	-webkit-border-radius: .75em;
+	border: 2px solid #CCC;
+	@include background-gradient(#DFDFDF, 'matte');
+}
+.button-container h1 {
+	font-size: $content-h1;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color:$base-color;
+}
+.button-container .x-body {
+	background-color:transparent !important;
+}
+.button-container .x-button {
+	height: 49px;
+	width: 49%;
+}
+.button-container .email-button {
+	@include background-gradient($base-color, 'matte');
+}
+.button-container .email-button span {
+	color: #FFF;
+} 
+.button-container .document-button {
+	@include background-gradient($base-color, 'matte');
+}
+.button-container .document-button span {
+	color: #FFF;
+}
+.button-container .link-button {
+	@include background-gradient($base-color, 'matte');
+}
+.button-container .link-button span {
+	color: #FFF;
+}
+.button-container .x-button .x-button-icon.x-icon-mask {
+	background-image: none;
+	background-color: #FFF;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #FFF), color-stop(3%, #FFF), color-stop(100%, #FFF));
+	background-image: -webkit-linear-gradient(top, #FFF,#FFF 3%,#FFF);
+	background-image: linear-gradient(top, #FFF,#FFF 3%,#FFF);
+}
+.button-container .document-button.x-button-pressing {
+	background-image: none;
+	background-color: $active-color;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, $active-color), color-stop(3%, $active-color), color-stop(100%, $active-color));
+	background-image: -webkit-linear-gradient(top, $active-color,$active-color 3%,$active-color);
+	background-image: linear-gradient(top, $active-color,$active-color 3%,$active-color);
+}
+.button-container .email-button.x-button-pressing {
+	background-image: none;
+	background-color: $active-color;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, $active-color), color-stop(3%, $active-color), color-stop(100%, $active-color));
+	background-image: -webkit-linear-gradient(top, $active-color,$active-color 3%,$active-color);
+	background-image: linear-gradient(top, $active-color,$active-color 3%,$active-color);
+}
+.button-container .link-button.x-button-pressing {
+	background-image: none;
+	background-color: $active-color;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, $active-color), color-stop(3%, $active-color), color-stop(100%, $active-color));
+	background-image: -webkit-linear-gradient(top, $active-color,$active-color 3%,$active-color);
+	background-image: linear-gradient(top, $active-color,$active-color 3%,$active-color);
+}
+
+/* Disclaimer MSG */
+.msg-disclaimer{
+	font-size: $msg-font-size;
+}
+
+/* clear */
+.clear {
+	clear:both;
+} 
+
+/* sup, sub reset */
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	_vertical-align: bottom;
+	position: relative;
+	
+}
+
+sup {
+	bottom: .5ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+
+/* TRICYCLE DESIGN OVERRIDES */
+
+@import 'tricycle' 

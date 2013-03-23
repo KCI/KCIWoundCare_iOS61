@@ -1,0 +1,1010 @@
+/*
+ * TRICYCLE CUSTOMIZATIONS
+ */
+ 
+ /* Structural Changes */
+ 
+.nav-groupdataview {
+    background-image: none;
+    background-color: #efefef;
+}
+
+.nav-groupdataview 
+{
+    background-image: none;
+    background-color: #efefef;  
+}
+
+.nav-groupdataview-item {
+    height: 128px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Darker Gradient Color for Tabbar */
+
+.x-tabbar-dark {
+background-image: linear-gradient(bottom, rgb(22,22,22) 36%, rgb(47,47,47) 84%);
+background-image: -o-linear-gradient(bottom, rgb(22,22,22) 36%, rgb(47,47,47) 84%);
+background-image: -moz-linear-gradient(bottom, rgb(22,22,22) 36%, rgb(47,47,47) 84%);
+background-image: -webkit-linear-gradient(bottom, rgb(22,22,22) 36%, rgb(47,47,47) 84%);
+background-image: -ms-linear-gradient(bottom, rgb(22,22,22) 36%, rgb(47,47,47) 84%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.36, rgb(22,22,22)),
+	color-stop(0.84, rgb(47,47,47))
+);
+}
+
+/* Home Button for Returning from Drill-Down */
+
+.logo {
+    background: url("../images/kci-home2.png") center center no-repeat;
+    width: 50px!important;
+    height: 40px!important;
+}
+
+.logo:active {
+    background: url("../images/kci-home2-active.png") center center no-repeat;
+}
+
+.x-button.kci-logo-btn {
+
+    background: none;
+    background-image: none;
+    background-color: none;
+    border: none;
+    -webkit-tap-highlight-color: none;
+
+}
+
+.kci-logo-btn-pressed
+{
+    background: none;
+    background-image: none;
+    background-color: none;
+    border: none;
+    -webkit-tap-highlight-color: none;
+}
+
+#ext-logo-1
+{
+    background-image: none;
+    background-color: none;
+    border: none;
+    -webkit-tap-highlight-color: none;
+}
+
+/* Custom Products Tab Bar Image */
+
+.x-tab .x-button-icon.home,.x-button .x-button-icon.x-icon-mask.home {
+    -webkit-mask-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA7VpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MDE4MDExNzQwNzIwNjgxMUE5NjFBNzAwQkU3NjQxMjEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkY5RUE5N0EzMjhBMTFFMkExNzM4NDlDNEQyNDg1NzIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkY5RUE5NzkzMjhBMTFFMkExNzM4NDlDNEQyNDg1NzIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDNjlDNDUwQjFCMjA2ODExODhDNkUwNzYzNjczRTdBNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowMTgwMTE3NDA3MjA2ODExQTk2MUE3MDBCRTc2NDEyMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvDm/SUAAAQ/SURBVHja7JvfUeMwEMaVDO/kKsBUcL4KzqkA88zDhQoIFUAqSK6ChAeeMRVgKsBXQUQFJyrISXefLjvCsiz/mSiBndHEhBDrJ2n325XFYLPZsI9kQ/bB7BP40O2o7RdcXFx00Y8IbSRbTN7/7vi8zfL7+/txL8CeFqOjMWBMwPBnuMIUTELgkoNY0iVLLQVgepA+DJvIdhYqZCfAMlhFAL3C8j3MKA3QG8D2ZRxN23PFZwvZhPGeaA0sQdUsTgHbheWAeiWdzj0j/qiXGZawKsIuHdrnglNQv/BakEgek4ieGNobN3QXdb9mOixh55hZH1NAj7hxTjqv2g/Z5i1g+vNhCbv08NUMkBmWp56xm1A0uBK4JqzywZ+yrQCZYvbSUCP30AKbOmD/+ojMV09xrSB/y/aAvwtWpmzV0o0DVAWESA7Mk3x9CR2S2sDc8YDOrkt0bSZBF/L3EwxI1EN/tDwJRPQqrf1vsl95G2AVYJ6Mm51jBucdBCCB73wmCYYNyFUG2vrC5SCsmshSAT1rk3DkgNP6y41SMUEeHjsgfO/pDcwxsw+enShww0eiwbpMPCN6HFwunQG2Tue0PGW4jiFNQWmwC7hOdrUCaAHIK4BGLFA7ahh0FOSC1MIPIUO2AZ4BdERKxFD0NzfiSG1gURGMMoBOO+5sQeTqjVzb6mOqwa1neFRRf750UNjTMpFXzUZQWzwNNDivypZCAOYNAhE3NFiwwOzI4Vcjj6CkAC9tvhZ6tcQa1LQJio4XBLUgZaoPH9ap45wscZpLBwcsKvzzjv3bk6o7exG0emIsfQX+SiI13yWwbRmr9wupe7cta+LEkl9rLeYYDFaix7Xq47b1cFlRcS3BOcCvdln9WGxs2xRo8kBcBbM1NvnUl35DW4QeoV3AmWPZTBCVl/j5WrZTAl/sG3CE3Q6Xr0wgRU+45oBX4F+wiTDbh0xL17djzGJcMxgt2XZTPsd1Zgyk3to5Jls90a6B9ezpmfbZ10rZ9llxYRQMOdFn28CZg1NlX0uURfhE6Yi936blWJqCbZ8stC0HORkE0VRqfMvDQdlJPAm9tozsAv6oH4pNelh1NBGhmmwr9ksHVA6E8FnSd5blO8Xsqk35SzkwM/h5lzsfdZaxy7XGtkEZWpbJbYWsqM4ssQoSRGQdjVchloR1ZWns0NIIEXmNGdbloYYPUouHFcFA1IA2wZdY8pmhxWP4frbrbGzgOj6Msx2+G3fC0GJhkR/tryes/Ohh57n0oO556ZbnPDjR4txDglzHImy/X6niphUwAb9l3ZzNEiQpeSNR1UuPO9HhGtAjtj2U1mdKWAZv0+Z+ZrgEPkUSEtKxw07r4bIy8hzR+Jr5HS4LSoeb+OQCEkQTkaC0uK8nD6KkLNTl4wkpDw8GmFkS/tySN+t2bOhwss/ArsrI16o0uuhUlvbZPv9v6dDtjwADAGVxhqPippNjAAAAAElFTkSuQmCC')
+}
+
+/* Custom Conditions Tab Bar Image */
+.x-tab .x-button-icon.compass2,.x-button .x-button-icon.x-icon-mask.compass2 {
+    -webkit-mask-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA7VpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MDE4MDExNzQwNzIwNjgxMUE5NjFBNzAwQkU3NjQxMjEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0FEMDNFOTMzMjhCMTFFMkExNzM4NDlDNEQyNDg1NzIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0FEMDNFOTIzMjhCMTFFMkExNzM4NDlDNEQyNDg1NzIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDNjlDNDUwQjFCMjA2ODExODhDNkUwNzYzNjczRTdBNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowMTgwMTE3NDA3MjA2ODExQTk2MUE3MDBCRTc2NDEyMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuBF/0gAAANnSURBVHja7FrdbdswEKYDv1cbVN1AncDyBJGfGyDKBJEmUDyBlQnsAulz3QmsTmB1gsgTVJnAJYGPwIWQHco2KVnlAQf9OCTv4/1TGe33e/Y/0cgBdoAdYAfYAR4y4G93d22H+Jxj3K84V+es/+PlpdXfjy1vsAC75ezh+ZHz13NBt6Eby4BjApbhPrYpgCkNh+Cac95ybMQ54LzmXPZZw8JcE86vnDecMzClFTZBUo13lJYYt8VcCebuHjAPWBKkFG6hCKeCEb46Jc/TBv9dKZu4wNzbS4AftwTowVQnuAYfDPEOmDu9LzXGMKwVYAPEmILzby5TwSN1fVZa4pMEWNjDIp/Jgm0pJX6cQOA2v+tQCUv5g/saKavQBbxRNHGNJDQ/1S484J8RMV+v5wBraeYiwnOwVetKCz6bnGnSNoiadH7Mp280d05ey56CrQlfrpbmGhfavu+RpgXY71yj2sXN+IQFhJn/4vwJwG0HtwJyvBGZzHdLXNtLFAEVrqGGoH5D4SBdRWd8RdZ8OKVbukR7KAObpIwIJsA8I8/WDbmW5mA5zyPuS1jQnMydq37aBWC1nq5IRK+I5ipSNso8PyJdlK+4TUWsouprP1wRoRcNZjqRpkh8b9nQIgqgM2XOXreHCWkPn0mA80kBUxOrkP65g0mH2IT80oKZAixBzTWEnjYEsYWpys7UiYc01/uWgnsYc3FTNg14DTMNEKB8TbAbjCkaeunen2nNADwgzfsxn38lRzszU0KZBFxD8BTPwi//Ev/0lHcyL890auK+BS2mFAsrgIoVTQfkWGfOLBzX2j6XVi2gbri/esAycHns/SlliOAUk7w9NQ3cxkH8EmAF0C/w0zcAS/FuhY35ORQNr0lJ2WTaD9iU6KPa+Ro0zJSS8lAO9pWS82oB58SPw4ajo5AUHLlpwDZMOkVTkAFYSUBtAbRGWnoaSlqSuThh7783yaidDikt0fIxI439Do1CTCK2cbIVtJ4AVqahHd7LNHXqJ5beanhypDfOEaVvh6ThEoC8AynpFmY+GMApQGcNv2X4LR2SSTNUU1vlMMAnNTQbkoappiNSOkY2U1IX7WEBcLKULJjlD3S2NcwUgNa/RnYBuFNygDsybWvU1ZmWtTMsldy/DzvADrAD7AA7wD2ifwIMAAJjOTlND8fbAAAAAElFTkSuQmCC')
+}
+
+/* Landing Page Customizations */
+
+
+.product-landing-tablet
+{
+    background-color: #fff;
+    background-image: none;
+}
+
+.product-landing-tablet .product-list-text
+{
+    padding-top: 2.0em;
+}
+
+.product-landing-tablet .product-lander-image
+{
+    display: block;
+    margin-right: 15px;
+}
+
+.product-landing-tablet .product-lander-flair
+{
+    display: block;
+}
+
+.product-landing-tablet .nav-groupdataview-item
+{
+    height: 150px;
+}
+
+.product-landing-tablet .nav-groupdataview-item .product-template-right-bg
+{
+    display: none;
+}
+
+.product-landing-tablet .nav-groupdataview-item .product-template-right-bg img
+{
+    display: none;
+}
+
+.product-subtemplate-thumbnail
+{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+/* Products Template Changes */
+
+.featured-product-splash + .content-brand-vac-therapy-subtemplate,
+.featured-product-splash + .content-brand-vac-therapy-subtemplate2,
+.featured-product-splash + .content-brand-graftjacket-subtemplate,
+.featured-product-splash + .content-brand-abthera,
+.featured-product-splash + .content-brand-prevena
+{
+    font-size: 14pt;
+    font-family: "Helvetica Neue",HelveticaNeue,"Helvetica-Neue",Helvetica,"BBAlpha Sans",sans-serif;
+    padding-top: 370px;
+}
+
+.content h1
+{
+    font-size: 20pt;
+}
+
+.featured-product-splash
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 350px;
+}
+
+.featured-product-splash img
+{
+    position: absolute; 
+    right: 2%; 
+    top: 5%;
+}
+
+.featured-splash-wounds-subtemplate
+{
+    height: 280px;
+}
+
+.content-wounds-subtemplate
+{
+    padding-top: 300px;
+}
+
+.featured-splash-wounds-subtemplate img
+{
+    position: relative;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #333;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px
+}
+
+.content-product-title-wounds-subtemplate
+{
+    display: none;
+}
+
+
+.product-list-text
+{
+    padding-top: 35px;
+}
+
+.product-carousel-title
+{
+    font-size: 26px;
+    font-family: "Helvetica Neue",HelveticaNeue,"Helvetica-Neue",Helvetica,"BBAlpha Sans",sans-serif;
+    background-color: none;
+    -webkit-tap-highlight-color: none;
+    text-shadow: -1px -1px #ffffff;
+    font-weight: bold;
+}
+
+.product-carousel-subtitle
+{
+    font-size: 18px;
+    font-family: "Helvetica Neue",HelveticaNeue,"Helvetica-Neue",Helvetica,"BBAlpha Sans",sans-serif;
+    color: #7f7f7f;
+    background-color: none;
+    text-shadow: none;
+    font-weight: bold;
+    -webkit-tap-highlight-color: none;
+}
+
+.product-lander-flair,
+div.brand-vac-therapy-subtemplate-bg .product-lander-flair,
+div.brand-vac-therapy-subtemplate2-bg .product-lander-flair,
+div.brand-default-products-vac-bg .product-lander-flair,
+div.brand-graftjacket-subtemplate-bg .product-lander-flair
+{
+    display: none;
+    float: right;
+    width: 129px;
+    height: 129px;
+    margin-top: 13px;
+    margin-right: 8px;
+}
+
+#brand-vac-therapy-subtemplate-product-template-right-bg,
+#brand-vac-therapy-subtemplate-product-template-right-bg img,
+#brand-vac-therapy-subtemplate2-product-template-right-bg,
+#brand-vac-therapy-subtemplate2-product-template-right-bg img,
+#brand-default-products-vac-product-template-right-bg,
+#brand-default-products-vac-product-template-right-bg img,
+#brand-graftjacket-subtemplate-product-template-right-bg,
+#brand-graftjacket-subtemplate-product-template-right-bg img
+{
+    display: block;
+}
+
+/*
+#brand-vac-therapy-subtemplate-nav-product-list-item,
+#brand-vac-therapy-subtemplate2-nav-product-list-item,
+#brand-default-products-vac-nav-product-list-item,
+#brand-graftjacket-product-nav-product-list-item
+{
+    height: 150px;
+}
+*/
+
+.brand-vac-therapy-bg, .brand-prevena-bg, .brand-graftjacket-bg, .brand-abthera-bg
+{
+    background-color: #fff;
+    border: 0px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    height: 150px;
+    width: 98%;
+    
+        background-image: linear-gradient(bottom, rgb(191,191,191) 21%, rgb(245,245,245) 61%);
+background-image: -o-linear-gradient(bottom, rgb(191,191,191) 21%, rgb(245,245,245) 61%);
+background-image: -moz-linear-gradient(bottom, rgb(191,191,191) 21%, rgb(245,245,245) 61%);
+background-image: -webkit-linear-gradient(bottom, rgb(191,191,191) 21%, rgb(245,245,245) 61%);
+background-image: -ms-linear-gradient(bottom, rgb(191,191,191) 21%, rgb(245,245,245) 61%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.21, rgb(191,191,191)),
+	color-stop(0.61, rgb(245,245,245))
+);
+
+
+    
+}
+
+.brand-vac-therapy-bg .product-carousel-title
+{
+    color: #00aeef;
+}
+
+.brand-abthera-bg .product-carousel-title
+{
+    color: #7ac143;
+}
+
+.brand-prevena-bg .product-carousel-title
+{
+    color: #7374a9;
+}
+
+.brand-graftjacket-bg .product-carousel-title
+{
+    color: #942687;
+}
+
+/* Product Subtemplate Lists */
+
+.product-vertical-indicator-1, .product-vertical-indicator-2
+{
+    height: 100%; 
+    display: none; 
+    width: 20px; 
+    float: left;
+    margin-right: 68px;
+}
+
+.featured-splash-brand-graftjacket-subtemplate
+{
+background-image: linear-gradient(bottom, rgb(255,255,255) 9%, rgb(239,222,237) 59%, rgb(255,255,255) 80%);
+background-image: -o-linear-gradient(bottom, rgb(255,255,255) 9%, rgb(239,222,237) 59%, rgb(255,255,255) 80%);
+background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 9%, rgb(239,222,237) 59%, rgb(255,255,255) 80%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 9%, rgb(239,222,237) 59%, rgb(255,255,255) 80%);
+background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 9%, rgb(239,222,237) 59%, rgb(255,255,255) 80%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.09, rgb(255,255,255)),
+	color-stop(0.59, rgb(239,222,237)),
+	color-stop(0.8, rgb(255,255,255))
+);
+}
+
+.featured-splash-brand-abthera
+{
+background-image: linear-gradient(bottom, rgb(255,255,255) 9%, rgb(223,232,216) 45%, rgb(255,255,255) 80%);
+background-image: -o-linear-gradient(bottom, rgb(255,255,255) 9%, rgb(223,232,216) 45%, rgb(255,255,255) 80%);
+background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 9%, rgb(223,232,216) 45%, rgb(255,255,255) 80%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 9%, rgb(223,232,216) 45%, rgb(255,255,255) 80%);
+background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 9%, rgb(223,232,216) 45%, rgb(255,255,255) 80%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.09, rgb(255,255,255)),
+	color-stop(0.45, rgb(223,232,216)),
+	color-stop(0.8, rgb(255,255,255))
+);
+}
+
+.featured-splash-brand-prevena
+{
+background-image: linear-gradient(bottom, rgb(255,255,255) 9%, rgb(223,223,238) 45%, rgb(255,255,255) 80%);
+background-image: -o-linear-gradient(bottom, rgb(255,255,255) 9%, rgb(223,223,238) 45%, rgb(255,255,255) 80%);
+background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 9%, rgb(223,223,238) 45%, rgb(255,255,255) 80%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 9%, rgb(223,223,238) 45%, rgb(255,255,255) 80%);
+background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 9%, rgb(223,223,238) 45%, rgb(255,255,255) 80%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.09, rgb(255,255,255)),
+	color-stop(0.45, rgb(223,223,238)),
+	color-stop(0.8, rgb(255,255,255))
+);
+}
+
+.featured-splash-brand-vac-therapy-subtemplate,
+.featured-splash-brand-vac-therapy-subtemplate2
+{    
+background-image: linear-gradient(bottom, rgb(255,255,255) 22%, rgb(205,213,220) 61%, rgb(235,240,245) 81%);
+background-image: -o-linear-gradient(bottom, rgb(255,255,255) 22%, rgb(205,213,220) 61%, rgb(235,240,245) 81%);
+background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 22%, rgb(205,213,220) 61%, rgb(235,240,245) 81%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 22%, rgb(205,213,220) 61%, rgb(235,240,245) 81%);
+background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 22%, rgb(205,213,220) 61%, rgb(235,240,245) 81%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.22, rgb(255,255,255)),
+	color-stop(0.61, rgb(205,213,220)),
+	color-stop(0.81, rgb(235,240,245))
+);
+}
+
+.horizontal-product-indicator
+{
+}
+
+.horizontal-brand-abthera
+{
+background-image: linear-gradient(left , rgb(100,149,55) 23%, rgb(122,193,67) 60%);
+background-image: -o-linear-gradient(left , rgb(100,149,55) 23%, rgb(122,193,67) 60%);
+background-image: -moz-linear-gradient(left , rgb(100,149,55) 23%, rgb(122,193,67) 60%);
+background-image: -webkit-linear-gradient(left , rgb(100,149,55) 23%, rgb(122,193,67) 60%);
+background-image: -ms-linear-gradient(left , rgb(100,149,55) 23%, rgb(122,193,67) 60%);
+
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	right top,
+	color-stop(0.23, rgb(100,149,55)),
+	color-stop(0.6, rgb(122,193,67))
+);
+}
+
+.horizontal-brand-prevena
+{
+background-image: linear-gradient(left , rgb(85,84,132) 23%, rgb(115,116,169) 60%);
+background-image: -o-linear-gradient(left , rgb(85,84,132) 23%, rgb(115,116,169) 60%);
+background-image: -moz-linear-gradient(left , rgb(85,84,132) 23%, rgb(115,116,169) 60%);
+background-image: -webkit-linear-gradient(left , rgb(85,84,132) 23%, rgb(115,116,169) 60%);
+background-image: -ms-linear-gradient(left , rgb(85,84,132) 23%, rgb(115,116,169) 60%);
+
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	right top,
+	color-stop(0.23, rgb(85,84,132)),
+	color-stop(0.6, rgb(115,116,169))
+);
+}
+
+.horizontal-brand-graftjacket-subtemplate
+{
+background-image: linear-gradient(left , rgb(148,38,135) 23%, rgb(198,101,185) 60%);
+background-image: -o-linear-gradient(left , rgb(148,38,135) 23%, rgb(198,101,185) 60%);
+background-image: -moz-linear-gradient(left , rgb(148,38,135) 23%, rgb(198,101,185) 60%);
+background-image: -webkit-linear-gradient(left , rgb(148,38,135) 23%, rgb(198,101,185) 60%);
+background-image: -ms-linear-gradient(left , rgb(148,38,135) 23%, rgb(198,101,185) 60%);
+
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	right top,
+	color-stop(0.23, rgb(148,38,135)),
+	color-stop(0.6, rgb(198,101,185))
+);
+}
+
+.horizontal-brand-vac-therapy-subtemplate,
+.horizontal-brand-vac-therapy-subtemplate2
+{
+background-image: linear-gradient(left , rgb(0,158,215) 23%, rgb(0,175,239) 60%);
+background-image: -o-linear-gradient(left , rgb(0,158,215) 23%, rgb(0,175,239) 60%);
+background-image: -moz-linear-gradient(left , rgb(0,158,215) 23%, rgb(0,175,239) 60%);
+background-image: -webkit-linear-gradient(left , rgb(0,158,215) 23%, rgb(0,175,239) 60%);
+background-image: -ms-linear-gradient(left , rgb(0,158,215) 23%, rgb(0,175,239) 60%);
+
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	right top,
+	color-stop(0.23, rgb(0,158,215)),
+	color-stop(0.6, rgb(0,175,239))
+);
+}
+
+html
+{
+    font-family: "Helvetica Neue",HelveticaNeue,"Helvetica-Neue",Helvetica,"BBAlpha Sans",sans-serif;
+    font-size: 14pt;
+    line-height: 1;
+}
+
+.content p, .content ul, .content ul li
+{
+    font-family: "Helvetica Neue",HelveticaNeue,"Helvetica-Neue",Helvetica,"BBAlpha Sans",sans-serif;
+    font-size: 14pt;
+    line-height: 1;
+}
+
+.content p a
+{
+   line-height: 2;
+}
+
+.content ul li
+{
+    padding-bottom: 8px;
+}
+
+.content p strong
+{
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+p.content-footnote
+{
+   font-size: 10pt;
+}
+
+.content-brand-vac-therapy-subtemplate h1,
+.content-brand-vac-therapy-subtemplate2 h1
+{
+   color: #00AEEF;
+}
+
+.content-brand-graftjacket-subtemplate h1
+{
+   color: #942687;
+}
+
+.content-brand-prevena h1
+{
+   color: #555484;
+}
+
+.content-brand-abthera h1
+{
+   color: #7ac143;
+}
+
+.content-product-title
+{
+    width: 250px; 
+    position: absolute; 
+    left: 60px; 
+    top: 150px; 
+    line-height: 1;
+}
+
+.featured-splash-brand-abthera .content-product-title
+{
+    color: #7ac143;
+    font-size: 49px; 
+    font-weight: bold;
+    text-shadow: 1px 2px #ffffff;
+}
+
+.featured-splash-brand-graftjacket-subtemplate  .content-product-title
+{
+    font-weight: bold; 
+    font-size: 49px; 
+    color: #942687;
+    text-shadow: 1px 2px #ffffff;
+}
+
+.featured-splash-brand-prevena .content-product-title
+{
+    font-weight: bold; 
+    font-size: 49px; 
+    color: #7374a9;
+    text-shadow: 1px 2px #ffffff;
+}
+
+.featured-splash-brand-vac-therapy-subtemplate .content-product-title,
+.featured-splash-brand-vac-therapy-subtemplate2 .content-product-title
+{
+    font-weight: bold; 
+    font-size: 49px; 
+    color: #00aeef;
+    text-shadow: 1px 2px #ffffff;
+}
+
+.content-disclaimer
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding: 15px;
+    font-size: 10pt;
+    line-height: 1;
+    font-weight: normal;
+}
+
+
+.brand-vac-therapy-subtemplate2-vertical-indicator-1
+{
+    margin-right: 0px;
+}
+
+.brand-vac-therapy-subtemplate2-vertical-indicator-2
+{
+    display: block;
+    background-color: red;
+    margin-right: 68px;
+    height: 128px;
+    
+background-image: linear-gradient(bottom, rgb(93,209,255) 5%, rgb(177,233,255) 53%);
+background-image: -o-linear-gradient(bottom, rgb(93,209,255) 5%, rgb(177,233,255) 53%);
+background-image: -moz-linear-gradient(bottom, rgb(93,209,255) 5%, rgb(177,233,255) 53%);
+background-image: -webkit-linear-gradient(bottom, rgb(93,209,255) 5%, rgb(177,233,255) 53%);
+background-image: -ms-linear-gradient(bottom, rgb(93,209,255) 5%, rgb(177,233,255) 53%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.05, rgb(93,209,255)),
+	color-stop(0.53, rgb(177,233,255))
+);    
+}
+
+.brand-vac-therapy-subtemplate-vertical-indicator-1,
+.brand-vac-therapy-subtemplate2-vertical-indicator-1,
+.brand-default-products-vac-vertical-indicator-1,
+.brand-graftjacket-subtemplate-vertical-indicator-1
+{
+    height: 128px;
+    display: block;
+}
+
+.product-lander-image,
+#brand-vac-therapy-subtemplate-product-lander-image,
+#brand-vac-therapy-subtemplate2-product-lander-image,
+#brand-default-products-vac-product-lander-image,
+#brand-graftjacket-subtemplate-product-lander-image
+{
+    float: left;
+    padding-right: 20px;
+    width: 340px;
+    display: none;
+}
+
+.product-template-right-bg
+{
+    width: 245px;
+    height: 128px;
+    background-image: url('../images/product-subtemplate-chevron.png');
+    float: right;
+    margin-right: 10px;
+}
+
+
+.brand-vac-therapy-subtemplate-bg, 
+.brand-default-products-vac-bg,
+.brand-vac-therapy-subtemplate2-bg
+{    
+    background-color: #fff;
+    background-image: none;
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #eee;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+    height: 128px;
+    margin-top: -22px;   
+    width: 100%;
+}
+
+#nav-product-list-item-v-a-c--therapy-units,
+#nav-product-list-item-v-a-c-ulta
+{
+    margin-top: 0px;
+}
+
+.brand-vac-therapy-subtemplate-bg .product-carousel-title, 
+.brand-vac-therapy-subtemplate2-bg .product-carousel-title,
+.brand-default-products-vac-bg .product-carousel-title,
+{
+    font-size: 26px;
+    color: #00aeef;
+}
+
+.brand-default-products-vac-bg
+{
+background-image: linear-gradient(bottom, rgb(244,252,255) 3%, rgb(221,245,255) 52%);
+background-image: -o-linear-gradient(bottom, rgb(244,252,255) 3%, rgb(221,245,255) 52%);
+background-image: -moz-linear-gradient(bottom, rgb(244,252,255) 3%, rgb(221,245,255) 52%);
+background-image: -webkit-linear-gradient(bottom, rgb(244,252,255) 3%, rgb(221,245,255) 52%);
+background-image: -ms-linear-gradient(bottom, rgb(244,252,255) 3%, rgb(221,245,255) 52%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.03, rgb(244,252,255)),
+	color-stop(0.52, rgb(221,245,255))
+);
+}
+
+.brand-vac-therapy-subtemplate-bg .product-carousel-subtitle,
+.brand-vac-therapy-subtemplate2-bg .product-carousel-subtitle
+{
+    font-size: 18px;
+    color: #7f7f7f;
+}
+
+.brand-vac-therapy-subtemplate-vertical-indicator-1,
+.brand-vac-therapy-subtemplate2-vertical-indicator-1,
+.brand-default-products-vac-vertical-indicator-1
+{
+background-image: linear-gradient(bottom, rgb(6,154,213) 3%, rgb(0,175,239) 52%);
+background-image: -o-linear-gradient(bottom, rgb(6,154,213) 3%, rgb(0,175,239) 52%);
+background-image: -moz-linear-gradient(bottom, rgb(6,154,213) 3%, rgb(0,175,239) 52%);
+background-image: -webkit-linear-gradient(bottom, rgb(6,154,213) 3%, rgb(0,175,239) 52%);
+background-image: -ms-linear-gradient(bottom, rgb(6,154,213) 3%, rgb(0,175,239) 52%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.03, rgb(6,154,213)),
+	color-stop(0.52, rgb(0,175,239))
+);
+}
+
+.brand-graftjacket-subtemplate-bg
+{    
+    background-color: #fff;
+    background-image: none;
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #eee;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+    height: 128px;
+    width: 100%;
+    margin-top: -22px;
+
+}
+
+#nav-product-list-item-graftjacket-rtm
+{
+    margin-top: 0px;
+}
+
+.brand-graftjacket-subtemplate-bg .product-carousel-title
+{
+    font-size: 26px;
+    color: #c13bb2;
+}
+
+.brand-graftjacket-subtemplate-bg .product-carousel-subtitle
+{
+    font-size: 18px;
+    color: #7f7f7f;
+}
+
+.brand-graftjacket-subtemplate-vertical-indicator-1
+{
+    background-image: linear-gradient(bottom, rgb(96,19,86) 27%, rgb(193,59,177) 64%);
+background-image: -o-linear-gradient(bottom, rgb(96,19,86) 27%, rgb(193,59,177) 64%);
+background-image: -moz-linear-gradient(bottom, rgb(96,19,86) 27%, rgb(193,59,177) 64%);
+background-image: -webkit-linear-gradient(bottom, rgb(96,19,86) 27%, rgb(193,59,177) 64%);
+background-image: -ms-linear-gradient(bottom, rgb(96,19,86) 27%, rgb(193,59,177) 64%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.27, rgb(96,19,86)),
+	color-stop(0.64, rgb(193,59,177))
+);
+
+}
+
+/*
+
+.featured img {
+    border: 0px;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    float: right;
+    margin-right: 25px;
+}
+
+*/
+
+h2.featured-splash-title
+{
+    padding-top: 100px;
+}
+
+.nav-dataview-item {
+    background: none;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    font-weight: bold;
+}
+
+.nav-dataview-left {
+    padding-right: 0px
+}
+
+.nav-dataview-left h1
+{
+    font-weight: bold;
+}
+
+.nav-dataview-container
+{
+    background-color: none;
+    background-image: none;
+}
+
+.nav-dataview-inner
+{
+background-image: linear-gradient(bottom, rgb(192,199,204) 23%, rgb(233,235,237) 80%);
+background-image: -o-linear-gradient(bottom, rgb(192,199,204) 23%, rgb(233,235,237) 80%);
+background-image: -moz-linear-gradient(bottom, rgb(192,199,204) 23%, rgb(233,235,237) 80%);
+background-image: -webkit-linear-gradient(bottom, rgb(192,199,204) 23%, rgb(233,235,237) 80%);
+background-image: -ms-linear-gradient(bottom, rgb(192,199,204) 23%, rgb(233,235,237) 80%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.23, rgb(192,199,204)),
+	color-stop(0.8, rgb(233,235,237))
+);
+}
+
+.kci-navigation-bar-prevena
+{
+background-image: linear-gradient(bottom, rgb(85,84,132) 23%, rgb(115,116,169) 80%);
+background-image: -o-linear-gradient(bottom, rgb(85,84,132) 23%, rgb(115,116,169) 80%);
+background-image: -moz-linear-gradient(bottom, rgb(85,84,132) 23%, rgb(115,116,169) 80%);
+background-image: -webkit-linear-gradient(bottom, rgb(85,84,132) 23%, rgb(115,116,169) 80%);
+background-image: -ms-linear-gradient(bottom, rgb(85,84,132) 23%, rgb(115,116,169) 80%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.23, rgb(85,84,132)),
+	color-stop(0.8, rgb(115,116,169))
+);
+}
+
+.kci-navigation-bar-abthera
+{
+background-image: linear-gradient(bottom, rgb(102,159,55) 27%, rgb(139,218,79) 64%);
+background-image: -o-linear-gradient(bottom, rgb(102,159,55) 27%, rgb(139,218,79) 64%);
+background-image: -moz-linear-gradient(bottom, rgb(102,159,55) 27%, rgb(139,218,79) 64%);
+background-image: -webkit-linear-gradient(bottom, rgb(102,159,55) 27%, rgb(139,218,79) 64%);
+background-image: -ms-linear-gradient(bottom, rgb(102,159,55) 27%, rgb(139,218,79) 64%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.27, rgb(102,159,55)),
+	color-stop(0.64, rgb(139,218,79))
+);
+}
+
+.kci-navigation-bar-graftjacket
+{
+background-image: linear-gradient(bottom, rgb(148,38,135) 27%, rgb(198,85,185) 64%);
+background-image: -o-linear-gradient(bottom, rgb(148,38,135) 27%, rgb(198,85,185) 64%);
+background-image: -moz-linear-gradient(bottom, rgb(148,38,135) 27%, rgb(198,85,185) 64%);
+background-image: -webkit-linear-gradient(bottom, rgb(148,38,135) 27%, rgb(198,85,185) 64%);
+background-image: -ms-linear-gradient(bottom, rgb(148,38,135) 27%, rgb(198,85,185) 64%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.27, rgb(148,38,135)),
+	color-stop(0.64, rgb(198,85,185))
+);
+}
+
+.kci-navigation-bar-vactherapy
+{
+background-image: linear-gradient(bottom, rgb(0,95,154) 2%, rgb(0,175,239) 51%);
+background-image: -o-linear-gradient(bottom, rgb(0,95,154) 2%, rgb(0,175,239) 51%);
+background-image: -moz-linear-gradient(bottom, rgb(0,95,154) 2%, rgb(0,175,239) 51%);
+background-image: -webkit-linear-gradient(bottom, rgb(0,95,154) 2%, rgb(0,175,239) 51%);
+background-image: -ms-linear-gradient(bottom, rgb(0,95,154) 2%, rgb(0,175,239) 51%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.02, rgb(0,95,154)),
+	color-stop(0.51, rgb(0,175,239))
+);
+}
+
+
+
+.featured-splash-brand-vac-therapy-subtemplate2 img
+{
+    margin-top: 40px;
+}
+
+.featured-splash-brand-graftjacket-subtemplate img
+{
+    margin-top: 40px;
+}
+
+.featured-splash-brand-prevena img
+{
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+.featured-splash-brand-prevena h2
+{
+    margin-left: 35px;
+}
+
+.featured-splash-brand-abthera img
+{
+    margin-top: 40px;
+}
+
+#content-product-title-sensat-r-a-c--technology
+{
+    left: 15px;
+}
+
+#featured-splash-sensat-r-a-c--technology img
+{
+    top: 50px;
+}
+
+#content-product-title-veraflo---veraflo-cleanse
+{
+    top: 90px;
+    width: 350px;
+    left: 50px;
+}
+
+#content-product-title-simplace---simplace-ex
+{
+    top: 120px;
+    left: 25px;
+    width: 350px;
+}
+
+#content-product-title-granufoam
+{
+    left: 25px;
+}
+
+#content-product-title-prevena
+{
+     left: 30px;
+}
+
+#content-product-title-simplace---simplace-ex
+{
+}
+
+#content-product-title-granufoam-bridge---bridge-xg
+{
+    top: 100px;
+    left: 30px;
+}
+
+.featured-hotspot
+{
+    float: clear;
+    text-align: center;
+}
+
+.featured-hotspot img
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tablet-conditions-modal-overlay .brand-prevena-bg,
+.tablet-conditions-modal-overlay .brand-abthera-bg
+{
+    border-radius: 0px; 
+    background-image: none; 
+    background-color: transparent; 
+    height: 60px;
+}
+
+.nav-groupeddataview-item .brand-vac-therapy-subtemplate-bg, 
+.nav-groupeddataview-item .brand-default-products-vac-bg,
+.nav-groupeddataview-item .brand-vac-therapy-subtemplate2-bg,
+.nav-groupeddataview-item .brand-graftjacket-subtemplate-bg
+{  
+    margin-top: 0px;
+}
+.nav-groupeddataview-item .nav-group-right
+{
+    width: 340px;
+}
+
+/* Hack for displaying prevena bg */
+.nav-groupeddataview-item .brand-prevena-bg, .nav-groupeddataview-item .brand-abthera-bg
+{
+    display: none;
+}
+

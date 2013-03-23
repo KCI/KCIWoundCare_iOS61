@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="app/controller/Products.js">
+    <Files>
+      <File FileName="data/manifest-videos3.json" Line="1" Column="1" />
+      <File FileName="data/manifest-images5.json" Line="1" Column="1" />
+      <File FileName="data/manifest-documents2.json" Line="181" Column="50" />
+      <File FileName="data/content9.json" Line="1" Column="1" />
+      <File FileName="data/config12.json" Line="1" Column="1" />
+      <File FileName="app/controller/Index.js" Line="288" Column="6" />
+      <File FileName="app/controller/Products.js" Line="173" Column="5" />
+      <File FileName="app/controller/Related.js" Line="251" Column="6" />
+      <File FileName="app/view/tablet/products/ProductNavigationViewContainer.js" Line="1" Column="1" />
+      <File FileName="app/view/tablet/products/ProductNavigationView.js" Line="1" Column="1" />
+      <File FileName="app/view/tablet/products/ProductNavigationGroupDataView.js" Line="1" Column="1" />
+      <File FileName="app/view/tablet/products/ProductNavigationDataView.js" Line="1" Column="1" />
+      <File FileName="app/view/tablet/products/ProductLanding.js" Line="11" Column="5" />
+      <File FileName="app/view/tablet/products/ProductCarousel.js" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

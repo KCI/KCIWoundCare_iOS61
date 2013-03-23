@@ -1,0 +1,32 @@
+{
+  "config": [
+    {
+      "xid": "2",
+      "version": "15",
+      "type": "document",
+      "filename": "manifest-documents2.json",
+      "url": "http://722fdc7429dc14d8e5ec-de9c8a9d5e84d164e0ff2e125e267277.r11.cf2.rackcdn.com/manifest-documents2.json"
+    },
+    {
+      "xid": "3",
+      "version": "17",
+      "type": "image",
+      "filename": "manifest-images5.json",
+      "url": "http://722fdc7429dc14d8e5ec-de9c8a9d5e84d164e0ff2e125e267277.r11.cf2.rackcdn.com/manifest-images5.json"
+    },
+    {
+      "xid": "4",
+      "version": "10",
+      "type": "video",
+      "filename": "manifest-videos3.json",
+      "url": "http://722fdc7429dc14d8e5ec-de9c8a9d5e84d164e0ff2e125e267277.r11.cf2.rackcdn.com/manifest-videos3.json"
+    },
+    {
+      "xid": "6",
+      "version": "38",
+      "type": "content",
+      "filename": "content9.json",
+      "url": "http://722fdc7429dc14d8e5ec-de9c8a9d5e84d164e0ff2e125e267277.r11.cf2.rackcdn.com/content9.json"
+    }
+  ]
+}
